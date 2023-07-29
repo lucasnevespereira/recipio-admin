@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recipio Family Invitation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            border: 1px solid #313276;
+            color: #313276;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        @media only screen and (max-width: 600px) {
+        }
+
+    </style>
+</head>
+<body>
+<h2>Hello {{.Username}},</h2>
+<p>You were invited to a Recipio family. Click the link below to accept the invitation:</p>
+<a href="https://recipio.fr/accept?token={{.Token}}">Click here to accept</a>
+</body>
+</html>

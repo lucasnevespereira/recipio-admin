@@ -1,0 +1,17 @@
+# fly.toml app configuration file generated for recipio-admin on 2023-07-29T19:25:25+02:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = "recipio-admin"
+primary_region = "cdg"
+
+[[mounts]]
+  source = "pb_data"
+  destination = "/app/pb_data"
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = true
+  auto_start_machines = true
