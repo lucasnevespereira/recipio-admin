@@ -23,10 +23,6 @@ func main() {
 		})
 		return nil
 	})
-	app.OnRecordAfterCreateRequest("users").Add(func(e *core.RecordCreateEvent) error {
-		e.Record.Set("emailVisibility", true)
-		return nil
-	})
 	if err := app.Start(); err != nil {
 		log.Fatal(err)
 	}
