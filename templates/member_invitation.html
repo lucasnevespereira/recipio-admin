@@ -32,8 +32,8 @@
     </style>
 </head>
 <body>
-<h2>Hello {{.Username}},</h2>
+<p>Hello <b>{{.Username}}</b>,</p>
 <p>You were invited to a Recipio family. Click the link below to accept the invitation:</p>
-<a href="https://recipio.fr/family/{{.Slug}}/accept?token={{.Token}}">Click here to accept</a>
+<a href="https://recipio.fr/family/{{.Slug}}/accept?token={{.Token}}&userID={{.UserID}}">Click here to accept</a>
 </body>
 </html>
