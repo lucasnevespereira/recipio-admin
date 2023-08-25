@@ -33,8 +33,7 @@
 </head>
 <body>
 <h2>Hello {{.Username}},</h2>
-<p>You were invited to a Recipio family. </p>
-<p>Click the link below to join <b>{{.FamilyName}}</b>:</p>
-<a href={`https://recipio.fr/family/accept?token=${token}&familyID=${familyID}`}>Click here to accept</a>
+<p>You were invited to a Recipio family. Click the link below to accept the invitation:</p>
+<a href={`https://recipio.fr/family/{{.Slug}}/accept?token={{.Token}}`}>Click here to accept</a>
 </body>
 </html>
