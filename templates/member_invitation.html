@@ -35,6 +35,6 @@
 <h2>Hello {{.Username}},</h2>
 <p>You were invited to a Recipio family. </p>
 <p>Click the link below to join <b>{{.FamilyName}}</b>:</p>
-<a href="https://recipio.fr/family/{{.FamilyID}}/accept?token={{.Token}}">Click here to accept</a>
+<a href={`https://recipio.fr/family/accept?token=${token}&familyID=${familyID}`}>Click here to accept</a>
 </body>
 </html>
